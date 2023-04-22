@@ -85,5 +85,7 @@ function atualizaEstatisticas(peca, operacao) {
 function trocaCor(cor) {
     const robo = document.querySelector("[data-robo]");
     robo.src = `img/Robotron2000${cor}.png`;
-    console.log(robo);
+    const fundo = document.querySelector("body");
+    fundo.style.background = `url(img/Fundo${cor}.jpg)`;
+    fundo.style.backgroundPosition = "center center";
 };

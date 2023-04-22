@@ -2,12 +2,12 @@
     --main-cinza: #CCCCCC;
     --main-branco: #FFFFFF;
     --main-preto: #000000;
-    --robo-azul: blue;
-    --robo-amarelo: yellow;
-    --robo-vermelho: red;
-    --robo-branco: white;
-    --robo-rosa: pink;
-    --robo-preto: rgb(39, 38, 38);
+    --robo-Azul: blue;
+    --robo-Amarelo: yellow;
+    --robo-Vermelho: red;
+    --robo-Branco: white;
+    --robo-Rosa: pink;
+    --robo-Preto: rgb(39, 38, 38);
 }
 
 * {
@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url(../img/fundo.jpg);
+    background: url(../img/FundoPreto.jpg);
     background-position: center center;
     background-size: cover cover;
     padding: 0;
@@ -60,27 +60,27 @@ main {
 }
 
 .azul {
-    background-color: var(--robo-azul);
+    background-color: var(--robo-Azul);
 }
 
 .amarelo {
-    background-color: var(--robo-amarelo);
+    background-color: var(--robo-Amarelo);
 }
 
 .vermelho {
-    background-color: var(--robo-vermelho);
+    background-color: var(--robo-Vermelho);
 }
 
 .branco {
-    background-color: var(--robo-branco);
+    background-color: var(--robo-Branco);
 }
 
 .rosa {
-    background-color: var(--robo-rosa);
+    background-color: var(--robo-Rosa);
 }
 
 .preto {
-    background-color: var(--robo-preto);
+    background-color: var(--robo-Preto);
 }
 
 .btn {
