@@ -80,3 +80,10 @@ function atualizaEstatisticas(peca, operacao) {
         }
     });
 };
+
+// Função para alterar imagem do robô:
+function trocaCor(cor) {
+    const robo = document.querySelector("[data-robo]");
+    robo.src = `img/Robotron2000${cor}.png`;
+    console.log(robo);
+};
