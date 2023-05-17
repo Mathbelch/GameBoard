@@ -138,3 +138,5 @@ function atualizarPlacar() {
     ponto.play();
   }
 }
+
+alert("Use as setas para movimentar a raquete esquerda, e as teclas w e s para a raquete do lado direito")

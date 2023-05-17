@@ -22,23 +22,25 @@ footer {
 }
 
 .cards {
-   width: 100%;
-   position: flex;
-   flex-direction: row;
-   align-content: center;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1em;
+   margin-top: 1em;
 }
 
 .card {
    /* Add shadows to create the "card" effect */
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
-   width: 50%;
-   margin: 1em;
+   width: 40%;
+   margin-bottom: 1.5em;
  }
  
  /* On mouse-over, add a deeper shadow */
  .card:hover {
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
  }
  
  /* Add some padding inside the card container */
@@ -50,4 +52,14 @@ footer {
    color: red;
    font-weight: bold;
    text-decoration: none;
+}
+
+a:hover {
+   color: aqua;
+}
+
+.code {
+   color: darkGray;
+   font-size: 0.7em;
+   display: block;
 }

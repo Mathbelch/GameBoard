@@ -8,6 +8,7 @@ function tocaSom(id) {
     };
 }
 const listaDeTeclas = document.querySelectorAll('.tecla');
+alert("Ative o som para iteragir com o painel")
 
 for(let i = 0; i < listaDeTeclas.length; i++) {
     const tecla = listaDeTeclas[i]; 
@@ -27,4 +28,5 @@ for(let i = 0; i < listaDeTeclas.length; i++) {
     tecla.onkeyup = function() {
         tecla.classList.remove('ativa');
     };
+
 }

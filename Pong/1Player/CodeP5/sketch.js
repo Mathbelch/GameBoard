@@ -134,3 +134,5 @@ function atualizarPlacar() {
     ponto.play();
   }
 }
+
+alert("Use as setas do teclado para movimentar a raquete do lado esquerdo!")
