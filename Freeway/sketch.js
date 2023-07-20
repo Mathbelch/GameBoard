@@ -10,4 +10,8 @@ function draw() {
   moveActor();
   returnCarToInitialPosition();
   checkCollide();
+  setActor();
+  showButton();
 }
+
+alert('Help the cow to cross the route. Play start to begin the game.')

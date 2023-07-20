@@ -1,6 +1,6 @@
-let yCars = [40, 96, 150];
-let stepCars = [2, 3, 2.5];
-let xCars = [550, 550, 550];
+let xCars = [550, 550, 550, 550, 550, 550];
+let yCars = [40, 96, 150, 210, 270, 318];
+let stepCars = [2, 3, 2.5, 5, 3, 2.3];
 let widthCar = 50;
 let heigthCar = 40;
 
