@@ -8,5 +8,6 @@ function draw() {
   showCar();
   moveCar();
   moveActor();
-  returnCarToInitialPosition()
+  returnCarToInitialPosition();
+  checkCollide();
 }

@@ -1,37 +1,30 @@
-let xCar1 = 550;
-let yCar1 = 40;
-let stepCar1 = 2;
-
-let xCar2 = 550;
-let yCar2 = 96;
-let stepCar2 = 3;
-
-let xCar3 = 550;
-let yCar3 = 150;
-let stepCar3 = 2.5;
-
+let yCars = [40, 96, 150];
+let stepCars = [2, 3, 2.5];
+let xCars = [550, 550, 550];
+let widthCar = 50;
+let heigthCar = 40;
 
 
 function showCar() {
-   image(imageCar1, xCar1, yCar1, 50, 40);
-   image(imageCar2, xCar2, yCar2, 50, 40);
-   image(imageCar3, xCar3, yCar3, 50, 40);
+   for (let i = 0; i < imageCars.length; i++) {
+      image(imageCars[i], xCars[i], yCars[i], widthCar, heigthCar);
+   }
  }
  
  function moveCar() {
-   xCar1 -= stepCar1;
-   xCar2 -= stepCar2;
-   xCar3 -= stepCar3;
+   for (let i = 0; i < imageCars.length; i++) {
+      xCars[i] -= stepCars[i];
+   }
  }
 
  function returnCarToInitialPosition() {
-   if (xCar1 < -50) {
-      xCar1 = 550;
+   for (let i = 0; i < imageCars.length; i++) {
+      if (gotthroughScreen(xCars[i])) {
+         xCars[i] = 550;
+      }
    }
-   if (xCar2 < -50) {
-      xCar2 = 550;
-   }
-   if (xCar3 < -50) {
-      xCar3 = 550;
-   }
+ }
+
+ function gotthroughScreen(xCars) {
+   return xCars < -widthCar;
  }
