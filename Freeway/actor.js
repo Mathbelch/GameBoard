@@ -1,14 +1,15 @@
 let xActors = [100, 200, 300, 400];
 let yActors = [370, 367, 367, 368];
-let stepActors = [1.5, 1, 2.5, 3];
+let stepActors = [1.5, 1, 2, 2.5];
+let collideActors = [10, 10, 10, 10]
 let collide = false;
 let indice = 0;
 
 function showActor() {
    image(imageActors[0], xActors[0], yActors[0], 25, 25);
-   image(imageActors[1], xActors[1], yActors[1], 30, 30);
-   image(imageActors[2], xActors[2], yActors[2], 30, 30);
-   image(imageActors[3], xActors[3], yActors[3], 30, 30);
+   image(imageActors[1], xActors[1], yActors[1], 25, 25);
+   image(imageActors[2], xActors[2], yActors[2], 25, 25);
+   image(imageActors[3], xActors[3], yActors[3], 25, 25);
  }
 
  function moveActor() {
@@ -23,7 +24,7 @@ function showActor() {
 
  function checkCollide() {
   for (let i = 0; i < imageCars.length; i++) {
-    collide = collideRectCircle(xCars[i], yCars[i], widthCar, heigthCar, xActors[indice], yActors[indice], 0.1);
+    collide = collideRectCircle(xCars[i], yCars[i], widthCar, heigthCar, xActors[indice], yActors[indice], collideActors[indice]);
     if (collide) {
       collideSong.play();
       returnToInitialPosition();
@@ -41,7 +42,7 @@ function showActor() {
     if (indice < imageActors.length - 1) {
       indice += 1;
     } else {
-      alert('Well Done');
+      endGame();
     }  
   }
  }

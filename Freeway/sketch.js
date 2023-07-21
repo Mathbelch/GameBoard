@@ -14,4 +14,4 @@ function draw() {
   showButton();
 }
 
-alert('Help the cow to cross the route. Play start to begin the game.')
+alert('Help the animals to cross the route. Play start to begin the game.')
